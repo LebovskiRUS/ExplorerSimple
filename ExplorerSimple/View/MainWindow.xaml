@@ -55,14 +55,14 @@
                     <ListView ItemsSource="{Binding SelectedDirectory.Directories}" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="400">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Имя Папок" DisplayMemberBinding="{Binding Name}" Width="400"/>
+                                <GridViewColumn Header="Имя Папок 📁" DisplayMemberBinding="{Binding Name}" Width="400"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
                     <ListView ItemsSource="{Binding SelectedDirectory.Files}" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="400" Margin="0,10,0,0">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Имя файла" DisplayMemberBinding="{Binding FileName}" Width="400"/>
+                                <GridViewColumn Header="Имя файла 📄" DisplayMemberBinding="{Binding FileName}" Width="400"/>
                             </GridView>
                         </ListView.View>
                     </ListView>

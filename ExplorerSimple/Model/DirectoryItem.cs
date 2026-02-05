@@ -90,7 +90,7 @@ namespace ExplorerSimple.Model
             try
             {
                 var files = Directory.GetFiles(FullPath)
-                                     .Select(f => new FileItem { FileName = Path.GetFileName(f) });
+                                     .Select(f => new FileItem { FileName = $"📄 Path.GetFileName(f)" });
 
                 foreach (var f in files)
                 {
@@ -108,7 +108,7 @@ namespace ExplorerSimple.Model
             try
             {
                 var dirs = Directory.GetDirectories(FullPath)
-                    .Select(f => new DirectoryItem { Name = Path.GetFileName(f), FullPath = f });
+                    .Select(f => new DirectoryItem { Name = $"📁 {Path.GetFileName(f)}", FullPath = f });
                 foreach (var f in dirs)
                 {
                     Directories.Add(f);

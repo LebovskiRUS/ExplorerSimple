@@ -59,7 +59,7 @@ namespace ExplorerSimple.ModelView
                                       .Where(d => d.IsReady)
                                       .Select(d => new DirectoryItem
                                       {
-                                          Name = $"{d.Name} ({d.VolumeLabel})",
+                                          Name = $"💽 {d.Name} ({d.VolumeLabel})",
                                           FullPath = d.RootDirectory.FullName
                                       });
 
